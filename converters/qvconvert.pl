@@ -29,6 +29,7 @@
 
 use strict;
 use warnings;
+use Data::Dumper;
 use Getopt::Long;
 
 # Show help
@@ -81,6 +82,7 @@ my $acl_rule = 0;
 
 # Route-map beginning string
 my $rm_begin = '';
+my $pl = '';
 
 foreach(@quagga_config)
 {
@@ -179,14 +181,28 @@ foreach(@quagga_config)
     {
         my @words = split( / /, $_ );
 
-        my $pl_begin = "set policy prefix-list6 ".$words[2]." rule ".$words[4];
+        $acl_rule += $rule_step;
+        if( $pl ne $words[2] )
+        {
+            # Previous access list has ended, reset rule counter
+            $acl_rule = $first_rule;
+            $pl = $words[2];
+        }
+        
+        if( $acl_rule > 65535 )
+        {
+            print "Error: access-list rule number exceeded allowed value!\n";
+            print "Try decreasing rule step by using --rule-step=n option";
+            exit(1);
+        }
+        my $pl_begin = "set policy prefix-list6 ".$words[2]." rule ".$acl_rule;
 
-        print $pl_begin." action ".$words[5]."\n";
-        print $pl_begin." prefix ".$words[6]."\n";
-        if( $words[7] )
+        print $pl_begin." action ".$words[3]."\n";
+        print $pl_begin." prefix ".$words[4]."\n";
+        if( $words[6] )
         {
             # It has "le" or "ge" statement
-            print $pl_begin." ".$words[7]." ".$words[8];
+            print $pl_begin." ".$words[5]." ".$words[6];
         }
     }
 
