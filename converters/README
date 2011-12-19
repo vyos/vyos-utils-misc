@@ -1,0 +1,5 @@
+This directory contains various scripts for converting configuration
+files of other software to Vyatta configuration.
+
+Files:
+qvconvert.pl         Quagga to Vyatta converter.
