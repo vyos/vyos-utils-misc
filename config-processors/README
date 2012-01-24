@@ -1,4 +1,4 @@
 This directory contains scripts for config altering.
 
 Files:
-
+vstrip.pl               Strips off private information from configs.
