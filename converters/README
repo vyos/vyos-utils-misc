@@ -3,3 +3,4 @@ files of other software to Vyatta configuration.
 
 Files:
 qvconvert.pl         Quagga to Vyatta converter.
+vyatta2openwrt-dhcp.sh       Exports Vyatta/EdgeOS DHCP static mapping to OpenWRT format
