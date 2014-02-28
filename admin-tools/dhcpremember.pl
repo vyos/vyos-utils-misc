@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# Generated static mapping from the DHCP leases op mode command output
+# Generates static mapping commands from the DHCP leases op mode command output
 #
 # On VyOS and Vyatta, invoke like "run show dhcp server leases | /config/scripts/dhcpremember.pl"
 # On EdgeOS, invoke like "run show dhcp leases | /config/scripts/dhcpremember.pl"
