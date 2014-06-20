@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# Removes private information from Vyatta config files.
+# Joins OpenVPN config, CA, cert, and key into one file.
 #
 # Copyright (C) 2014 Daniil Baturin <daniil@baturin.org>
 #
