@@ -35,7 +35,3 @@ Has a `VyOS-Networks/vyos-utils-misc` twin (also Perl, also tagged stale). Canon
 - Don't confuse this repo with `vyos-utils` — completely different scope and language.
 - README is one paragraph; per-subdir `README` files are the real docs.
 - Stale by audit baseline; if you adopt one of these scripts into the product, fold it into `vyos-1x` rather than evolving it here.
-
----
-
-This file is mirrored on Confluence: [`vyos/vyos-utils-misc`](https://internal.confluence.vyos.com/wiki/spaces/VYOS/pages/818413866). The Confluence page also carries the per-repo audit data (settings, workflows, secret counts, hygiene) that complements this CLAUDE.md. Edit either side; resync via the documentation pipeline.
