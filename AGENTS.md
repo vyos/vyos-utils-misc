@@ -21,15 +21,12 @@ A grab-bag of community-contributed VyOS helper scripts: admin tools, build tool
 - `.github/workflows/` — minimal CI inherited via `vyos/.github` reusables.
 
 ## Cross-repo context
-This repo is informal/optional and is not part of the canonical 14-repo build set in `VyOS-Networks/vyos-build-packages/repos.toml`. Stale by category-§3.10 in the cross-repo audit.
+This repo is informal/optional and is not part of the canonical 14-repo build set in an internal repository. Stale by category-§3.10 in the cross-repo audit.
 
 ## Conventions
 - Commit / PR title: `component: T12345: description` (Phorge ID expected).
 - Default branch `master` (per audit baseline); pre-dates the `current` rename. Light governance — community-driven contributions.
 - No mandatory LICENSE in tree at root; treat each script's header as authoritative.
-
-## Mirror relationship
-Has a `VyOS-Networks/vyos-utils-misc` twin (also Perl, also tagged stale). Canonical side is here.
 
 ## Notes for future contributors
 - README is one paragraph; per-subdir `README` files are the real docs.
