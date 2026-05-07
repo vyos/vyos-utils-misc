@@ -21,7 +21,7 @@ A grab-bag of community-contributed VyOS helper scripts: admin tools, build tool
 - `.github/workflows/` — minimal CI inherited via `vyos/.github` reusables.
 
 ## Cross-repo context
-This repo is informal/optional and is not part of the canonical 14-repo build set in `VyOS-Networks/vyos-build-packages/repos.toml`. Stale by category-§3.10 in the relations doc.
+This repo is informal/optional and is not part of the canonical 14-repo build set in `VyOS-Networks/vyos-build-packages/repos.toml`. Stale by category-§3.10 in the cross-repo audit.
 
 ## Conventions
 - Commit / PR title: `component: T12345: description` (Phorge ID expected).
