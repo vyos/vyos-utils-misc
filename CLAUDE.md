@@ -32,6 +32,5 @@ This repo is informal/optional and is not part of the canonical 14-repo build se
 Has a `VyOS-Networks/vyos-utils-misc` twin (also Perl, also tagged stale). Canonical side is here.
 
 ## Notes for future contributors
-- Don't confuse this repo with `vyos-utils` — completely different scope and language.
 - README is one paragraph; per-subdir `README` files are the real docs.
 - Stale by audit baseline; if you adopt one of these scripts into the product, fold it into `vyos-1x` rather than evolving it here.
