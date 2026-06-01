@@ -25,7 +25,7 @@ This repo is informal/optional and is not part of the canonical 14-repo build se
 
 ## Conventions
 - Commit / PR title: `component: T12345: description` (Phorge ID expected).
-- Default branch `master` (per audit baseline); pre-dates the `current` rename. Light governance — community-driven contributions.
+- Default branch `rolling`. Light governance — community-driven contributions.
 - No mandatory LICENSE in tree at root; treat each script's header as authoritative.
 
 ## Notes for future contributors
